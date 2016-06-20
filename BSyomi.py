@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
     delnum=0
 
-    lines = [line.strip() for line in codecs.open('BSjisyo7.txt', 'r', 'utf-8')]
+    lines = [line.strip() for line in codecs.open('jisyo2.txt', 'r', 'utf-8')]
     #neologd = [line.strip() for line in codecs.open('neologd/neologd-adverb-dict-seed.20150623.csv', 'r', 'utf-8')] #63delete
     #neologd = [line.strip() for line in codecs.open('neologd/neologd-interjection-dict-seed.20151022.csv', 'r', 'utf-8')] #17delete
     #neologd = [line.strip() for line in codecs.open('neologd/neologd-adjective-verb-dict-seed.20160324.csv', 'r', 'utf-8')]#19delete
@@ -72,7 +72,7 @@ if __name__ == '__main__':
         print "{}-{}".format(i,flag)
         i += 1
 
-    fp = open("BSjisyo8.txt", "w")
+    fp = open("addWord.txt", "w")
     fp.write(dic)
     fp.close()
 
